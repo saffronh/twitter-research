@@ -4,14 +4,7 @@ class twitterminer():
     api = False
     data = []
 
-    twitter_keys = {
-        'consumer_key': 'h9AuPNFPeS0m4MPnvVdD00AS2', #add your consumer key
-        'consumer_secret': 'sDhHXXejJA7PNPFmrNlWdDtqa7MwCAmci6rR4jz9M31w4ApB3V', #add your consumer secret key
-        'access_token_key': '805863399032815616-ijcyfUVxoj7CGQCW6TjohKsFuXyQ4fl', #add your access token key
-        'access_token_secret': 'aPUvZqCZRX3Cb2GA9fATUv9qvn0noMdb3giojl2iZcSrJ' #add your access token secret key
-    }
-
-    def __init__(self,  request_limit = 20):
+    def __init__(self, twitter_keys, request_limit = 20):
 
         self.request_limit = request_limit
 
