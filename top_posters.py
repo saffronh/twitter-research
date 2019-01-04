@@ -1,6 +1,7 @@
 '''
 A class that processes the id2count files in a DerivedFiles folder (in the same
-directory) and
+directory) and takes the top 50 overall, per day, and all IDs with post counts
+above a specified number.
 
 '''
 
