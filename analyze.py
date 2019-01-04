@@ -5,8 +5,12 @@ class twitterminer():
     data = []
 
     def __init__(self, twitter_keys, request_limit = 20):
-
+        '''
+        twitter_keys should be a dict with 'consumer_key' ,'consumer_secret',
+        'access_token_key', 'access_token_secret'
+        '''
         self.request_limit = request_limit
+        self.twitter_keys = twitter_keys
 
         # This sets the twitter API object for use internall within the class
         self.set_api()
